@@ -1,0 +1,287 @@
+/* 
+    Created on : Mar 16, 2018, 12:24:31 PM
+    Author     : Group 1
+*/
+
+/***************************Global Styles*************************************/
+
+/***********************Header Styles****************************************/
+#logo_img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display:block;
+}
+/****************************Navigation links styles***************************/
+
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top:5px;
+}
+nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+nav a:hover {
+    background-color: #FF0000;
+}
+
+nav a.active {
+    background-color: #F7BE00;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 740px) {
+    nav li {
+        width: 150px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+
+    /* Option 1 - Display Inline */
+    nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    /****************************Sticky Footer styles***************************/
+    html, body {
+        height: 100%;
+        margin:0;
+        padding:0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+        flex: 1 0 auto;
+    }
+    footer {
+        flex-shrink: 0;
+        background-color: #C0C0C0;
+    }
+
+    /***************************Three column layout for footer *****************/
+    .column-left{ float: left; width: 33%; }
+    .column-right{ float: right; width: 33%; }
+    .column-center{ display: inline-block; width: 33%; }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .column-center, .column-center, .column-right {
+            width: 100%;  
+        }
+
+    }
+
+    /*************************** Global other styles*******************************/
+
+    .display_block{
+        display:block;
+    }
+
+    .text-align_center{
+        text-align: center;
+    }
+
+    .list_style_type_none{
+        list-style-type: none;
+    }
+
+    .color_c0c0c0{
+        background-color: #c0c0c0;
+    }
+
+    .border_1px_solid{
+        border:1px solid ;
+    }
+
+    .display_inline{
+        display:inline;
+    }
+
+    .margin_none{
+        margin:0;
+    }
+
+    .heading_margin_left{
+        margin-left:30px;
+    }
+
+    .padding-10px{
+        padding:10px;
+    }
+    .color-white{
+        background-color:white;
+    }
+
+    .results{
+        margin-top:10px;
+        float:right;
+        padding:10px;
+        border: 2px solid;
+        background-color:   #e5e7e9;
+        margin-right:20px;
+        min-width: 20%;
+    }
+    
+    .center{
+        margin:0 auto;
+        width:70%;
+    }
+
+    /***********************Home Page specific styles***************************/
+    .concert_information{
+        width:50%;
+        margin:auto;
+        margin-top:30px;
+        margin-bottom: 50px;
+        background-color: #F7BE00;
+        line-height: 1.6;
+    }
+
+    .center_image_main{
+        max-width: 100%;
+        height: auto;
+        display:block;
+        margin: 50px auto;
+    }
+
+    #schedule-table{
+        border-collapse: collapse;
+        margin-left:30px;
+        width:60%;
+    }
+
+    #schedule-table td, #schedule-table th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    #schedule-table tr:nth-child(even) {
+        background-color: white;
+    }
+
+    #schedule-table tr:nth-child(odd) {
+        background-color: #c0c0c0;
+    }
+  
+
+    /***********************Reservation Page specific styles***************************/
+    form{
+        display:inline-block;
+    }
+
+    input[type=text], input[type=email], input[type=tel]{
+        margin-top: -3px;
+        float: right;
+        width: 100px;
+        clear:both;
+
+    }
+
+    .customer_fieldset{
+        width: 60%;
+        margin-left: 100px;
+    }
+
+    .reservation_fieldset{
+
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    /*****************************Venue Page Specific Styles***************************/
+    .slider{
+        background-image: url(../images/venue-2.jpg);
+        width:922px;
+        height: 625px;
+        margin: 100px auto;
+        margin-bottom: 0px;
+        animation: slide 10s infinite;
+    }
+
+    @keyframes slide{
+        25%{
+            background-image: url(../images/venue-3.jpg);
+        }
+        50%{
+            background-image: url(../images/venue-4.jpg);
+        }
+        75%{
+            background-image: url(../images/venue-5.jpg);
+        }
+        100%{
+            background-image: url(../images/venue-6.jpg);
+        }
+    }
+
+    .venue_information{
+        width:50%;
+        margin:auto;
+        margin-top:30px;
+        margin-bottom: 50px;
+        background-color: #F7BE00;
+        line-height: 1.6;
+    }
+
+    .directions_and_parking{
+        width:50%;
+        margin:auto;
+        margin-top:30px;
+        margin-bottom: 50px;
+        background-color: #F7BE00;
+        line-height: 1.6;
+    }
+
+    /*****************************Support Page Specific Styles**********************/
+    .contact_info{
+        width:40%;
+        margin:auto;
+        background-color: #F7BE00;
+
+    }
+
+    .faqs{
+        width:40%;
+        margin:auto;
+        background-color: #F7BE00;
+
+    }
+
+    /******************************Report Page Specific Styles*******************/
+    button{
+        border-radius: 20px;
+        background-color: #F7BE00;
+        display:inline-block;
+        padding:10px;
+        margin-top:20px;
+        margin-left:20px;
+        box-shadow: 5px 7px #888888;
+    }
